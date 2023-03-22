@@ -1,4 +1,5 @@
-const CardProducts = (allProducts) => {
+const CardProducts = ({allProducts}) => {
+    console.log(allProducts, "banderita")
 
     return (
         <>

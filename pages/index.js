@@ -1,6 +1,6 @@
 import allProducts from '../useAxios';
 import { useState, useEffect } from 'react';
-import { CardProducts } from '@/components/cardProduct';
+import { CardProducts } from '@/components/cardProduct.jsx';
 
 
 export default function Home() {
@@ -17,7 +17,8 @@ export default function Home() {
 
         
             <section>
-              <CardProducts/>
+              <CardProducts
+              allProducts={allProducts}/>
 
             </section>
             <section>
