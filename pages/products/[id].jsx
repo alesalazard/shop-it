@@ -13,10 +13,6 @@ function Product() {
     }
   },[id])
 
-  useEffect(()=>{
-    console.log(product)
-  },[product])
-
   return(
     <>
         <div>{product && product.data.title}</div>

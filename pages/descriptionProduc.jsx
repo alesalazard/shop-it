@@ -1,3 +1,3 @@
-// const  descriptionProduc = () ={
+//export const  descriptionProduc = () ={
 
 // }
