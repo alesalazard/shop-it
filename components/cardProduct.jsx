@@ -1,5 +1,5 @@
-const CardProducts = ({allProducts}) => {
-    console.log(allProducts, "banderita")
+const CardProducts = ({product}) => {
+    console.log(product, "banderita")
 
     return (
         <>
