@@ -4,14 +4,14 @@ const Header = () => {
  
  return (
   <>
-  <h1>SHOP-IT</h1> 
+  <h1 className='titleNav'>SHOP-IT</h1> 
     
   <nav> 
     <ul>
-      <li>
-      <Link  href="/login"/>LOGIN</li>
-      <li>
-      <Link  href="/cart"/>CART</li>
+      <li >
+      <Link  href="/login">LOGIN</Link></li>
+      <li >
+      <Link  href="/cart">CART</Link></li>
       </ul>
   </nav>
   </>

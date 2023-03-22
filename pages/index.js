@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { CardProducts } from "@/components/cardProduct.jsx";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-//import '../styles/App.css'
+//import '../styles/app.css'
 
 export default function Home() {
 
@@ -21,7 +21,7 @@ export default function Home() {
         <h1>Productos</h1>
         {products.map((prod) => (
           <article key={prod.id} className='productCard'>
-            <image alt=''  src={prod.images[0]}></image>
+            <img alt=''  src={prod.images[0]}></img>
             <h1>{prod.title}</h1>
             <p>{prod.description}</p>
             <p>{prod.price}</p>
