@@ -2,7 +2,7 @@ import { allProducts } from "../useAxios";
 import { useState, useEffect } from "react";
 import { CardProducts } from "@/components/cardProduct.jsx";
 import Header from "@/components/header";
-import Footer from "@/components/footer";
+// import Footer from "@/components/footer";
 //import '../styles/app.css'
 
 export default function Home() {
@@ -14,12 +14,11 @@ export default function Home() {
   return (
     <>
       <Header />
-
-      <section>
-        <h1>Productos</h1>
+      <h1>Productos</h1>
+      <section className="products">
         {products.map((prod) => (
           <article key={prod.id} className='productCard'>
-            <img alt='' src={prod.images[0]}></img>
+            <img alt='' src={prod.images[0]} className="imgProduct"></img>
             <h1>{prod.title}</h1>
             <p>{prod.description}</p>
             <p>{prod.price}</p>
@@ -28,17 +27,24 @@ export default function Home() {
       </section>
       <section></section>
 
-      <Footer />
+      
       <style jsx>{`
+      .products{
+        display: flex;
+        flex: columns;
+        width: 240vh;
+
+      }
         .productCard {
-          display: flex;
-          flex: grid;
-          width: 120px;
+          margin: 20px;
+          width: 200px;
           height: 240px;
           text-align: center;
           background-color: white;
         }
-
+        .imgProduct {
+          width: 190px;
+        }
         .productCard h1 {
           font-weight: bold;
         }
