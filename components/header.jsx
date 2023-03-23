@@ -3,18 +3,17 @@ import Link from 'next/link';
 const Header = () => {
  
  return (
-  <>
-  <h1 className='titleNav'>SHOP-IT</h1> 
-    
-  <nav> 
-    <ul>
-      <li >
-      <Link  href="/login">LOGIN</Link></li>
-      <li >
-      <Link  href="/cart">CART</Link></li>
-      </ul>
-  </nav>
-  </>
+  <header className='header-container'>
+    <h1 className='title-nav'>SHOP-IT</h1> 
+    <nav> 
+      <ul className='navbar'>
+        <li >
+          <Link  href="/login" className='nav-link'>LOGIN</Link></li>
+        <li >
+          <Link  href="/cart" className='nav-link'>CART</Link></li>
+        </ul>
+    </nav>
+  </header>
   )
 }
 

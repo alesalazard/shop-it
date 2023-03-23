@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <h1>Productos</h1>
+      <h1 className='title-products'>Meet our Products</h1>
       <section className="products">
         {products.map((prod) => (
           <article key={prod.id} className='productCard'>
@@ -26,29 +26,6 @@ export default function Home() {
         ))}
       </section>
       <section></section>
-
-      
-      {/* <style jsx>{`
-      .products{
-        display: flex;
-        flex: columns;
-        width: 240vh;
-
-      }
-        .productCard {
-          margin: 20px;
-          width: 200px;
-          height: 240px;
-          text-align: center;
-          background-color: white;
-        }
-        .imgProduct {
-          width: 190px;
-        }
-        .productCard h1 {
-          font-weight: bold;
-        }
-      `}</style> */}
     </>
   );
 }
