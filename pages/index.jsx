@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { CardProducts } from "@/components/cardProduct.jsx";
 import Header from "@/components/header";
 // import Footer from "@/components/footer";
-//import '../styles/app.css'
+// import app from '../styles.app.css';
 
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -18,7 +18,7 @@ export default function Home() {
       <section className="products">
         {products.map((prod) => (
           <article key={prod.id} className='productCard'>
-            <img alt='' src={prod.images[0]} className="imgProduct"></img>
+            <img alt='product' src={prod.images[0]} className="imgProduct"></img>
             <h1>{prod.title}</h1>
             <p>{prod.description}</p>
             <p>{prod.price}</p>
@@ -28,7 +28,7 @@ export default function Home() {
       <section></section>
 
       
-      <style jsx>{`
+      {/* <style jsx>{`
       .products{
         display: flex;
         flex: columns;
@@ -48,7 +48,7 @@ export default function Home() {
         .productCard h1 {
           font-weight: bold;
         }
-      `}</style>
+      `}</style> */}
     </>
   );
 }
